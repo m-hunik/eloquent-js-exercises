@@ -1,13 +1,15 @@
-let size = 8;
+let size = 24;
 
 let board = "";
 
 for(let y = 0; y < size; y++) {
     for (let x = 0; x < size; x++) {
         if ((y + x) % 2 == 0) {
-            console.log("#");
+            board += " ";
         } else {
-            console.log(" ");
+            board += "#";
         }
     }
+    board += "\n";
 }
+console.log(board);
